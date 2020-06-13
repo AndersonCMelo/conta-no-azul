@@ -25,7 +25,6 @@
 .section-seven .content .infographic .step {
   display: flex;
   align-items: center;
-  
 }
 
 .section-seven .content .infographic .number {
@@ -39,6 +38,11 @@
 .section-seven .content .infographic .text {
   font-size: 20px;
   color: #162B7E;
+  transition: 300ms ease-out;
+}
+
+.section-seven .content .infographic .step:hover .text {
+  color: #00DDAA;
 }
 
 .section-seven .content .infographic .line-one {
