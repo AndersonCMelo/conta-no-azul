@@ -485,46 +485,51 @@
       <h2 class="title">Faça sua simulação e<br><green>deixe suas contas no azul!</green></h2>
 
       <form class="form" action="">
+        <div class="result hide">
+          <p id="retorn"></p>
+          <button class="payment-button">Quero pagar meu</button>
+        </div>
+
         <div class="inputs">
 
           <div class="column">
             <div class="input-item">
               <p class="label">Seu nome</p>
-              <input class="input" type="text" name="name">
+              <input class="input" type="text" name="name" id="name">
             </div>
 
             <div class="input-item">
               <p class="label">Seu e-mail</p>
-              <input class="input" type="text" name="email">
+              <input class="input" type="text" name="email" id="email">
             </div>
 
             <div class="input-item">
               <p class="label">WhatsApp</p>
-              <input class="input" type="text" name="whatsapp">
+              <input class="input" type="text" name="whatsapp" id="whatsapp">
             </div>
           </div>
 
           <div class="column">
             <div class="input-item">
               <p class="label">Valor do boleto</p>
-              <input class="input" type="text" name="billet-value">
+              <input class="input" type="text" name="boleto" id="boleto">
             </div>
 
             <div class="input-item">
               <p class="label">Número de parcelas</p>
-              <input class="input" type="number" name="installments" min="1" max="12">
+              <input class="input" type="number" name="nParcelas" id="nParcelas" min="1" max="12">
             </div>
             
             <div class="input-item">
               <p class="label">Bandeira do cartão</p>
               <div class="input-item-radio">
                 <div class="input-area">
-                  <input class="input" type="radio" name="flag" value="vmehh">
+                  <input class="input" type="radio" name="bandeiras" id="bandeiras" value="vmehh">
                   <label for="vmehh"><img src="./assets/bandeiras01.jpg" alt="VMEHH"></label>
                 </div>
   
                 <div class="input-area">
-                  <input class="input" type="radio" name="flag" value="da">
+                  <input class="input" type="radio" name="bandeiras" name="bandeiras" value="da">
                   <label for="da"><img src="./assets/bandeiras02.jpg" alt="DA"></label>
                 </div>
               </div>
@@ -533,7 +538,7 @@
         </div>
 
         <div class="button-row">
-          <input class="button" type="submit" value="Simule agora">
+          <input class="button" type="submit" onclick="capture()" value="Simule agora">
         </div>
       </form>
     </div>
@@ -548,5 +553,6 @@
   </footer>
 
   <script src="./js/accordion.js"></script>
+  <script src="./js/simulator.js"></script>
 </body>
 </html>

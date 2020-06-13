@@ -440,12 +440,59 @@ green {
   color: #fff;
   padding: 12px 40px;
   border-radius: 5px;
-  background: #00DDAA;
+  background: #008CE9;
 
   cursor: pointer;
   transition: 300ms ease-out;
 }
 
 .section-ten .content .form .button:hover {
+  background: #00DDAA;
   transform: scale(0.97);
+}
+
+.section-ten .content .form .result {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #008CE9;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.section-ten .content .form .result #retorn {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.section-ten .content .form .result .payment-button {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #008CE9;
+
+  cursor: pointer;
+  transition: 300ms ease-out;
+}
+
+.section-ten .content .form .result .payment-button:hover {
+  background: #00DDAA;
+  transform: scale(0.97);
+}
+
+.section-ten .content .form .result.hide {
+  display: none;
+}
+
+.section-ten .content .form .inputs.hide {
+  display: none;
+}
+
+.section-ten .content .form .button-row.hide {
+  display: none;
 }
