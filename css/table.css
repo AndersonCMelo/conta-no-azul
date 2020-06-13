@@ -1,0 +1,181 @@
+/* Section Four */
+.section-four {
+  background: #162B7E;
+  padding: 70px 0 50px;
+}
+
+.section-four .content .title {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+
+  margin-bottom: 50px;
+}
+
+.section-four .content .table {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.section-four .content .table .column {
+  max-width: 240px;
+  width: 100%;
+
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  margin-right: 15px;
+}
+
+.section-four .content .table .column .column-title.contrast {
+  background: #00DDAA;
+}
+
+.section-four .content .table .column .column-title {
+  background: #008CE9;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+  height: 100px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-four .content .table .column .column-data {
+  padding: 0 10px;
+}
+
+.section-four .content .table .column .data {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 2px solid #D5D8E3;
+}
+
+.section-four .content .table .column .data.last-data {
+  border-bottom: none;
+}
+
+.section-four .content .table .column .data strong {
+  font-size: 30px;
+  font-weight: bold;
+  color: #162B7E;
+}
+
+.section-four .content .table .column .data span {
+  font-size: 30px;
+  font-weight: normal;
+  color: #162B7E;
+}
+
+.section-four .content .table .column .data em {
+  font-size: 12px;
+  font-style: normal;
+  color: #162B7E;
+}
+
+.section-four .content .table .column .data .icon {
+  margin-top: 10px;
+}
+
+.section-four .content .info {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .section-four .content .title {
+    font-size: 54px;
+  }
+
+  .section-four .content .table .column .data strong {
+    font-size: 24px;
+  }
+  
+  .section-four .content .table .column .data span {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 980px) {
+  .section-four .content .table .column .data {
+    padding: 0 10px;
+  }
+
+  .section-four .content .table .column .data strong {
+    font-size: 22px;
+  }
+  
+  .section-four .content .table .column .data span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 760px) {
+  .section-four .content .table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-four .content .table .column {
+    max-width: 100%;
+    width: 100%;
+  
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-four .content .table .column .column-title {
+    height: 70px;
+  }
+
+  .section-four .content .table .column .column-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-four .content .table .column .data {
+    padding: 0 5px;
+    height: 80px;
+  }
+
+  .section-four .content .table .column .data strong {
+    font-size: 18px;
+  }
+  
+  .section-four .content .table .column .data span {
+    font-size: 18px;
+  }
+
+  .section-four .content .table .column .data.last-data {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .section-four .content .info {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-four .content .title {
+    font-size: 34px;
+  }
+}

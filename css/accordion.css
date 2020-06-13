@@ -1,0 +1,134 @@
+/* Section Nine */
+.section-nine {
+  padding: 40px 0 80px;
+}
+
+.section-nine .content .title {
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  color: #162B7E;
+
+  margin-bottom: 50px;
+}
+
+.section-nine .content .accordion {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-nine .content .accordion-item {
+  background-color: #fff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+
+  cursor: pointer;
+}
+
+.section-nine .content .accordion-header .accordion-button {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #162B7E;
+  width: 100%;
+  background: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.section-nine .content .accordion-header i {
+  padding-left: 10px;
+}
+
+.section-nine .content .accordion-header .ion-md-remove {
+  display: none;
+}
+
+.section-nine .content .accordion-item .answer {
+  position: relative;
+  opacity: 1;
+  /* display: none; */
+
+  transition: 600ms ease-out;
+}
+
+.section-nine .content .accordion-item .answer::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 90%;
+  background-color: #00DDAA;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.section-nine .content .accordion-item .answer p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: #162B7E;
+  padding: 10px 20px;
+}
+
+.section-nine .content .accordion-item .answer.hide {
+  position: relative;
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+}
+
+.section-nine .content .accordion-header.change-icon .ion-md-remove {
+  display: block;
+}
+
+.section-nine .content .accordion-header.change-icon .ion-md-add {
+  display: none;
+}
+
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .section-nine .content .title {
+    font-size: 54px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 980px) {
+  .section-nine .content .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 880px) {
+  .section-nine .content .accordion {
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .section-nine .content .title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .section-nine .content .accordion-item {
+    padding: 10px 10px;
+  }
+
+  .section-nine .content .accordion-header .accordion-button {
+    font-size: 18px;
+    background: #fff;
+    text-align: left;
+  
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+}

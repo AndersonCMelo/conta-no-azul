@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #EEF3F9;
+  min-width: 290px;
+}
+
+a, h1, h2, h3, h4, h5, h6, p, span, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
