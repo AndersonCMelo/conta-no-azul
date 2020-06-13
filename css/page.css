@@ -190,6 +190,15 @@ green {
   margin-bottom: 50px;
 }
 
+.section-five .content .text-block .title-mobile {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1em;
+  color: #162B7E;
+
+  margin-bottom: 50px;
+}
+
 .section-five .content .text-block .line {
   display: flex;
   align-items: center;

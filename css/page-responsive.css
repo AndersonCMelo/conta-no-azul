@@ -174,7 +174,22 @@
 }
 
 /* Mobile */
+@media (min-width: 760px) {
+  .section-five .content .text-block .title-mobile {
+    display: none;
+  }
+}
 @media (max-width: 760px) {
+  .section-five .content .text-block .title {
+    display: none;
+  }
+  
+  .section-five .content .text-block .title-mobile {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
   .section-one {
     background-position: center /* bottom 0 */;
   }
@@ -354,7 +369,7 @@
     text-align: center;
   }
 
-  .section-five .content .text-block .title {
+  .section-five .content .text-block .title-mobile {
     font-size: 34px;
   }
 
