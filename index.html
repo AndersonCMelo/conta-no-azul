@@ -576,6 +576,24 @@
   <script src="./js/simulator.js"></script>
 
   <script>
+    function loadEcaiWidget(language = 'nl') {
+      const script = document.createElement("script");
+      script.src = "https://nice-glacier-096cae503.2.azurestaticapps.net/ecai.widget.js";
+      script.async = true;
+
+      script.onload = () => {
+        if (window.EuroconsumersAI) {
+          window.EuroconsumersAI.init({ language });
+        }
+      };
+
+      document.body.appendChild(script);
+    }
+
+    loadEcaiWidget('fr');
+  </script>
+
+  <script>
     // Avoid the screen rotation
     screen.orientation.lock("portrait-primary");
   </script>
